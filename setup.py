@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = "pycodesync",
-    version = "0.1.1",
+    version = "0.1.2",
     description="Code sync command line application.",
     author="chenyaofo",
     author_email = "chenyaofo@gmail.com",
