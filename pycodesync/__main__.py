@@ -54,7 +54,7 @@ def main():
         remote_path = args.remote_path
 
     if not args.no_branch_name:
-        remote_path = os.path.join(remote_path, get_branch_name())
+        remote_path = os.path.join(remote_path, get_branch_name(), "-dev")
     
     sync(local_path, remote_ip, ssh, remote_path,  
     not args.no_ignore_hidden_file, ignore_filetypes,file_limited_size)
@@ -62,4 +62,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
